@@ -1,0 +1,41 @@
+.authentication {
+   position: relative;
+   height: 100vh;
+   color: aliceblue;
+}
+
+.authForm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+   position: absolute;
+   top: 0px;
+   transform: scaleY(0);
+   transition: all 0.4s;
+}
+
+.loginContainer {
+   background-color: rgb(102, 51, 153);
+   transform-origin: top;
+}
+
+.registerContainer {
+   background-color: rgb(113, 60, 165);
+   transform-origin: bottom;
+}
+
+.showLogin {
+   transform: scaleY(1);
+}
+
+.showResister {
+   transform: scaleY(1);
+}
+.changeAuthPageLink {
+   color: cornflowerblue;
+   cursor: pointer;
+
+}
