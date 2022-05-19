@@ -4,8 +4,9 @@ import AddTask from "./AddTask";
 const Task = () => {
   return (
     <>
-      <div>Task</div>
-      <AddTask></AddTask>
+      <div className="py-5 ">
+        <AddTask></AddTask>
+      </div>
     </>
   );
 };

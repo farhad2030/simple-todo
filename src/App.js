@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Authentication from "./Components/Authentication/Authentication";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import Task from "./Components/Task/Task";
+import AllTask from "./Components/Task/AllTask";
 import TopNavbar from "./Components/TopNavbar/TopNavbar";
 
 function App() {
@@ -27,6 +28,14 @@ function App() {
           element={
             <RequireAuth>
               <Task></Task>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/alltask"
+          element={
+            <RequireAuth>
+              <AllTask></AllTask>
             </RequireAuth>
           }
         ></Route>

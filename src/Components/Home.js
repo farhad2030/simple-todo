@@ -8,7 +8,7 @@ const Home = () => {
 
   const [user, isLoading, error] = useAuthState(auth);
   return (
-    <div className=" my-4 justify-content-center text-center">
+    <div className="py-5 my-4 justify-content-center text-center">
       <h1 className="text-primary text-center">Welcome to ToDo App</h1>
       {!user ? (
         <>

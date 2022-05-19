@@ -39,7 +39,7 @@ const TopNavbar = () => {
           <Nav className="me-auto">
             {user ? (
               <>
-                <Nav.Link as={Link} to="allTask">
+                <Nav.Link as={Link} to="task">
                   Add task
                 </Nav.Link>
                 <Nav.Link as={Link} to="allTask">
