@@ -8,17 +8,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // tostify
 import "react-toastify/dist/ReactToastify.css";
 import Authentication from "./Components/Authentication/Authentication";
+import RequireAuth from "./Components/RequireAuth/RequireAuth";
+import Task from "./Components/Task/Task";
+import TopNavbar from "./Components/TopNavbar/TopNavbar";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h1 className="text-3xl font-bold  underline">Hello world!</h1>
-      </div>
+      <TopNavbar></TopNavbar>
       <Routes>
+        <Route
+          path="/authentication/login"
+          element={<Authentication></Authentication>}
+        ></Route>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/task"
+          element={
+            <RequireAuth>
+              <Task></Task>
+            </RequireAuth>
+          }
+        ></Route>
       </Routes>
-      <Authentication></Authentication>
     </>
   );
 }
